@@ -22,7 +22,7 @@ public class Crud {
 	@Id
 	@Column(name="id")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "idCrud_Sequence")
-	@SequenceGenerator(name = "idCrud_Sequence", sequenceName = "idCrud_Sequence", allocationSize = 1, initialValue = 2)
+	@SequenceGenerator(name = "idCrud_Sequence", sequenceName = "idCrud_Sequence", allocationSize = 1, initialValue = 1)
 	private Long id;
 	
 	@Column(name="nombre", nullable=false, unique=true)
